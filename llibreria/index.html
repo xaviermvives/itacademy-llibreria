@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Llibreria: El magatzem de llibres</title>
+    <link rel="stylesheet" href="css/styles.css">
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" width="150" alt="Llibreries: El magatzem">
+        </div>
+
+        <div class="search">
+            <input type="search" size="4">
+            <button>Buscar</button>
+        </div>
+
+        <div class="barres">
+                <div class="registrar">
+                    <button>Registrar-se</button>
+                </div>
+                <div class="entrar">
+                    <button>Entrar</button>
+                </div>
+                <div class="recordar"><a href="#">Has oblidat la contrasenya?</a></div>
+                <div class="comprar">
+                    <button>Comprar</button>
+                </div>
+            </div><!--end div barres-->
+
+        <div class="titol">
+            <h1>El Magatzem de llibres</h1>
+            <h3>La teva llibreria de capçalera</h3>
+        </div>
+
+        
+
+        <nav class="display">
+            <a href="#">llibres</a>
+            <a href="#">e-books</a>
+            <a href="#">novetats</a>
+            <a href="#">recomanats</a>
+            <a href="#">+ venuts</a>
+            <a href="#">catàleg</a>
+            <a href="#">agenda</a>
+            <a href="#">blog</a>
+            <a href="#">ajuda</a>
+            <a href="#">mapa web</a>
+            <a href="#">contacte</a>
+        </nav>
+    </header>
+
+    <main>
+        <h3 class="destacat">Novetats</h3>
+        <div class="carrusel">
+            
+            <img src="img/carrusel.png" width="1000" alt="">
+        </div>
+        <hr>
+
+        <!--contingut sota carrusel-->
+        <div class="box flotar marge">
+                <img src="img/llibre1.png" alt="">
+                <h3>Historia: Análisis del pasado</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolor, dicta sequi earum cum libero possimus tempora amet rerum reprehenderit id eos suscipit modi esse hic ipsa, nam reiciendis laborum.</p>
+                <span class="preu">15,40</span>
+                <button class="sell" href="#">Comprar</button>
+            </div><!--end box-->
+            <div class="box flotar">
+                <img src="img/llibre2.png" alt="">
+                <h3>Por el bien del imperio</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolor, dicta sequi earum cum libero possimus tempora amet rerum reprehenderit id eos suscipit modi esse hic ipsa, nam reiciendis laborum.</p>
+                <span class="preu">15,40</span>
+                <button class="sell" href="#">Comprar</button>
+            </div><!--end box-->
+            <!-------------------->
+            <aside class="pestanyes">
+                <div class="tab">
+                    <button class="tablinks" onclick="openCity(event, 'Agenda')">Agenda</button>
+                    <button class="tablinks" onclick="openCity(event, 'Blog')">Blog</button>
+                </div>
+                              
+                <div id="Agenda" class="tabcontent">
+                    <h3>Agenda</h3>
+                    <img src="img/blog1.png" alt="" class="pestimg">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum officia dignissimos maiores explicabo mollitia id asperiores dolorem rerum quia omnis, doloremque saepe numquam deserunt quidem modi ea nesciunt! Consequatur, voluptate?</p>
+                    <img src="img/blog2.png" alt="" class="pestimgR">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum officia dignissimos maiores explicabo mollitia id asperiores dolorem rerum quia omnis, doloremque saepe numquam deserunt quidem modi ea nesciunt! Consequatur, voluptate?</p>
+
+                </div>
+                              
+                <div id="Blog" class="tabcontent">
+                    <h3>Blog</h3>
+                    <img src="img/blog3.png" alt="" class="pestimg">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam nam eius ipsam. Qui ut dolores ipsa dolore? Libero qui reiciendis deleniti vel unde? Voluptatum veniam ad, voluptatibus optio modi sed?</p> 
+                </div>
+            </aside>
+            <!------------------>
+            <div class="box flotar marge">
+                <img src="img/llibre3.png" alt="">
+                <h3>La formació de la identitat</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolor, dicta sequi earum cum libero possimus tempora amet rerum reprehenderit id eos suscipit modi esse hic ipsa, nam reiciendis laborum.</p>
+                <span class="preu">15,40</span>
+                <button class="sell" href="#">Comprar</button>
+                </div><!--end box-->
+            <div class="box flotar">
+                    <img src="img/llibre4.png" alt="">
+                    <h3>Historia: El siglo de la revolución</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolor, dicta sequi earum cum libero possimus tempora amet rerum reprehenderit id eos suscipit modi esse hic ipsa, nam reiciendis laborum.</p>
+                    <span class="preu">15,40</span>
+                    <button class="sell" href="#">Comprar</button>
+            </div><!--end box-->
+            <!--END CONTINGUT -->
+    </main>
+    <footer></footer>
+
+    <!----------------------------------------------------------------------->
+    <script>
+            function openCity(evt, cityName) {
+                  var i, tabcontent, tablinks;
+                  tabcontent = document.getElementsByClassName("tabcontent");
+                  for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                  }
+                  tablinks = document.getElementsByClassName("tablinks");
+                  for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                  }
+                  document.getElementById(cityName).style.display = "block";
+                  evt.currentTarget.className += " active";
+            }
+        </script>
+</body>
+</html>

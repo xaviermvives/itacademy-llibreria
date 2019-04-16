@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box{
+            width:33.5%;
+            overflow:hidden;
+            outline:1px solid green;
+            margin-bottom:15px;
+        }
+        .box img{
+            float:left;
+            margin-right:10px;
+        }
+        .box h3{
+            margin-top:-1px;
+            margin-bottom:0;
+        }
+        .box p{
+            margin-top:0;
+            margin-bottom:0;
+        }
+        .sell{
+            font-size:16px;
+        }
+        .preu{
+            font-size:16px;
+            font-weight:bold;
+        }
+        .preu::after{
+            content:'\20AC'; 
+        }
+        .flotar{
+            float:left;
+        }
+        .marge{
+            margin-right:10px;
+        }
+
+    /* ASIDE */
+    .pestanyes{
+        width:30%;
+        height:550px;
+        float:right;
+        background-color:brown;
+    } 
+    </style>
+</head>
+<body>
+    <div class="box flotar marge">
+        <img src="img/llibre1.png" alt="">
+        <h3>Historia: Análisis del pasado</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolor, dicta sequi earum cum libero possimus tempora amet rerum reprehenderit id eos suscipit modi esse hic ipsa, nam reiciendis laborum.</p>
+        <span class="preu">15,40</span>
+        <button class="sell" href="#">Comprar</button>
+    </div><!--end box-->
+    <div class="box flotar">
+            <img src="img/llibre2.png" alt="">
+            <h3>Por el bien del imperio.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolor, dicta sequi earum cum libero possimus tempora amet rerum reprehenderit id eos suscipit modi esse hic ipsa, nam reiciendis laborum.</p>
+            <span class="preu">15,40</span>
+            <button class="sell" href="#">Comprar</button>
+    </div><!--end box-->
+    <aside class="pestanyes">
+        <h3>Blog</h3>
+    </aside>
+    <div class="box flotar marge">
+            <img src="img/llibre3.png" alt="">
+            <h3>La formació de la identitat</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolor, dicta sequi earum cum libero possimus tempora amet rerum reprehenderit id eos suscipit modi esse hic ipsa, nam reiciendis laborum.</p>
+            <span class="preu">15,40</span>
+            <button class="sell" href="#">Comprar</button>
+        </div><!--end box-->
+        <div class="box flotar">
+                <img src="img/llibre4.png" alt="">
+                <h3>Historia: El siglo de la revolución</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolor, dicta sequi earum cum libero possimus tempora amet rerum reprehenderit id eos suscipit modi esse hic ipsa, nam reiciendis laborum.</p>
+                <span class="preu">15,40</span>
+                <button class="sell" href="#">Comprar</button>
+        </div><!--end box-->
+
+        <div class="banner">
+
+        </div>
+
+</body>
+</html>
